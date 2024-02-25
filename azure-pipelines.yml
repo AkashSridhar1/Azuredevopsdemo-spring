@@ -4,7 +4,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: Azure Pipelines
 
 stages:
   - stage: 'Junit'
