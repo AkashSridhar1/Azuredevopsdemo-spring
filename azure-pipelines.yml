@@ -1,17 +1,10 @@
-#Demo Spring application
-
 trigger:
 - master
-pool:
-  name: Default
-  demands:
-   - agent.os -equals Darwin
 
 pool:
-  vmImage: 'macos-latest'  # Or a specific macOS image with Maven pre-installed
+  vmImage: 'macos-latest'
   demands:
-   - maven  # Or a specific Maven version constraint
-
+   - maven
 
 stages:
   - stage: 'Junit'
