@@ -6,7 +6,7 @@ trigger:
 pool:
   name: Default
   demands:
-   - agent.os -equals macOS 13.0 "Ventura"
+   - agent.os -equals Darwin
 
 stages:
   - stage: 'Junit'
