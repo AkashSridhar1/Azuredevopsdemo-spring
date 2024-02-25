@@ -5,6 +5,8 @@ trigger:
 
 pool:
   name: Azure Pipelines
+  demands:
+   - agent.os -equals Darwin
 
 stages:
   - stage: 'Junit'
