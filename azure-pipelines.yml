@@ -6,7 +6,7 @@ trigger:
 pool:
   name: LTIN-APLJM2LY9HJ65
   demands:
-   - agent.os -equals Darwin
+   - agent.os -equals macOS 13.0 "Ventura"
 
 stages:
   - stage: 'Junit'
